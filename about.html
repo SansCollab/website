@@ -1,0 +1,141 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>关于我们_重庆轩进软件有限公司</title>
+<meta name="keywords" content="关于我们,轩进软件,轩进游戏,轩进手游,轩进,网游,网络游戏,在线游戏,游戏,囧囧兔,特困生,搬运工,大胃王,达人秀,突突兔,弹弹兔,Rabbit smash"/>
+<meta name="description" content="重庆轩进软件有限公司是一家致力于移动游戏开发的创新性企业。公司拥有一个经验丰富、充满活力的团队。2012年成立以来，公司经过多个产品的迭代发展，拥有了自己成熟的产品开发流程，以及稳定的研发团队。团队主要成员拥有多年的海内外工作经验，对移动游戏市场有着深刻的理解，曾开发运营众多成功产品。"/>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<style type="text/css">
+#bg{ width:100%;height:960px;top:0px;left:0px;position:absolute;filter: Alpha(opacity=50);opacity:0.5; background:#000000; display:none;}
+.mapDiv{ position:fixed; width:800px; height:600px; left:50%; top:50%; margin:-280px 0 0 -400px; display:none; background:#f5f5f5;  border:2px solid #b2cdcb;}
+.close {
+    position: absolute;
+    right: -25px;
+    top: -25px;
+    width: 50px;
+    height: 50px;
+    background: #57d8d4;
+    border-radius: 25px;
+    box-shadow: 2px 2px 5px 0px black;
+    cursor: pointer;
+	z-index:9999;
+}
+
+.close:hover {
+    background: red;
+}
+.close:before {
+    position: absolute;
+    content: '';
+    width: 30px;
+    height: 10px;
+    background: white;
+    transform: rotate(45deg);
+    top: 20px;
+    left: 10px;
+}
+.close:after{
+    content: '';
+        position: absolute;
+    width: 30px;
+    height: 10px;
+    background: white;
+    transform: rotate(-45deg);
+    top: 20px;
+    left: 10px;
+}
+#allmap{
+	width:800px; 
+	height:600px;
+}
+</style>
+<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=F792274f876b7d4e182ccea2af484434"></script>
+<script type="text/javascript">
+function pupopen(popbox){
+	document.getElementById("bg").style.display="block";
+	document.getElementById(popbox).style.display="block";
+}
+function pupclose(popbox){
+	document.getElementById("bg").style.display="none";
+	document.getElementById(popbox).style.display="none";
+}
+</script>
+</head>
+<body>
+<div id="bg"></div>
+<div class="header">
+	<div class="head">
+		<h2><a href="http://www.xchange-cq.com/"><img src="images/logo.png" alt="重庆轩进软件有限公司"></a></h2>
+		<div class="nav">
+		  <ul>
+			<li><a href="index.html">首页</a></li>
+			<li><a href="game.html">产品介绍</a></li>
+			<li><a href="job.html">招贤纳士</a></li>
+			<li class="active"><a href="about.html">关于我们</a></li>
+		  </ul>
+		</div>
+	</div>
+</div>
+<div class="content">
+	<div class="m">
+		<div class="aboutBg"><img src="images/aboutBg.png"></div>
+		<div class="about">
+			<div class="aboutUs">
+				<h2>重庆轩进软件有限公司</h2>
+				<div class="usInfo">
+				<p>重庆轩进软件有限公司于2013年在重庆市两江新区注册成立，是一家致力于IP运营和移动游戏开发的高新技术企业。公司经过多年原创技术研发和实践，建立了“产、学、研、用”紧密结合的运行机制和模式，成立了“轩进研发中心”，拥有了自己成熟的产品开发流程。
+      </p>
+				<p>作为国家战略性新兴产业的典型代表，公司始终坚持走原始创新发展道路，拥有多项关键核心技术，其成长受到国家和政府的高度重视。
+作为一个专业的游戏产品开发公司，秉承“以玩家体验为核心，以创新产品为目标”的理念，坚持注重游戏的文化意义和社会意义，依托多名海外归国人才多年技术积累及游戏市场开拓能力，自主研发国产精品游戏，在积极“走出去”的同时公司也在大力布局国内市场，做好国内自主知识产权保护，提升品牌信誉，成为国内外认可的数字文化产品。</p>
+				</div>
+			</div>
+			<div class="contactUs">		
+				<div class="conUsL">
+					<h3>联系方式</h3>
+					<p>地址：重庆市渝北区卉竹路2号6幢15-1号</p>
+					<p>邮编：400000</p>
+					<p>电话：023-62327308</p>
+					<p>邮箱：lcsweet@xchange-cq.com</p>
+				</div>
+				<!--<div class="conUsR" onclick="pupopen('mapDiv')"><img src="images/map.jpg" alt="点击地图放大" title="点击地图放大"></div>-->
+				<a href="aboutMap.html"><div class="conUsR"><img src="images/map.jpg" alt="点击地图放大" title="点击地图放大"></div></a>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="mapDiv" id="mapDiv">
+	<a href="javascript:void(0);" onclick="pupclose('mapDiv')" class="close"></a>
+	<div id="allmap"></div>
+</div>
+<div class="footerUp"></div>
+<div class="footer">
+	<p>Copyright &copy; 2013-2022 Xuanjin Software Co., Ltd. All Rights Reserved  轩进软件 版权所有</p>
+	<p>网络文化经营许可证：渝网文[2017]2664-011号　　<a style="color:#456c6a;text-decoration:none;" href="https://beian.miit.gov.cn/" target="_blank">ICP证：渝ICP备16000597号&nbsp; &nbsp;&nbsp;</a><img src="./images/beian.png"/><a style="color:#456c6a;text-decoration:none;" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=50019002502442" target="_blank">渝公网安备: 50019002502442号</a></p>
+</div>
+<div style="display:none;">
+<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1260978284'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s95.cnzz.com/z_stat.php%3Fid%3D1260978284%26show%3Dpic1' type='text/javascript'%3E%3C/script%3E"));</script>
+</div>
+<script type="text/javascript">
+	// 百度地图API功能
+	var map = new BMap.Map("allmap");
+	var point = new BMap.Point(106.499121,29.627709);
+	var marker = new BMap.Marker(point);  // 创建标注
+	map.addOverlay(marker);              // 将标注添加到地图中
+	map.centerAndZoom(point, 18);
+	var opts = {
+	  width : 250,     // 信息窗口宽度
+	  height: 60,     // 信息窗口高度
+	  title : "重庆轩进软件有限公司" , // 信息窗口标题
+	  enableMessage:true,//设置允许信息窗发送短息
+	  message:"重庆轩进软件有限公司 联系电话：023-62327308"
+	}
+	var infoWindow = new BMap.InfoWindow("地址：重庆市渝北区卉竹路2号6幢15-1号    电话：023-62327308", opts);  // 创建信息窗口对象 
+	marker.addEventListener("click", function(){          
+		map.openInfoWindow(infoWindow,point); //开启信息窗口
+	});
+	map.openInfoWindow(infoWindow,point);
+	map.enableScrollWheelZoom(true);     //开启鼠标滚轮缩放
+</script>
+</body>
+</html>
